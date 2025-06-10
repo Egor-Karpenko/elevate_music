@@ -59,4 +59,24 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  const openMenuBtn = document.getElementById("openMenuBtn");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+  const fullscreenMenu = document.getElementById("fullscreenMenu");
+  const menuItems = document.querySelectorAll(".menu-item");
+
+  openMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.style.display = "flex";
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.style.display = "none";
+  });
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      fullscreenMenu.style.display = "none";
+    });
+  });
 });
+
