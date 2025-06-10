@@ -648,6 +648,7 @@ body.menu-open {
   }
 
   .burger {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px; /* Замість left: 20px */
